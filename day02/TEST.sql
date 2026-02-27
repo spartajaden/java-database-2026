@@ -1,0 +1,26 @@
+-- 1. employee 테이블에서 직원명, 급여 조회하기
+SELECT *
+  FROM EMPLOYEE e
+ ORDER BY e.EMP_NAME DESC;
+
+SELECT *
+  FROM EMPLOYEE e
+ ORDER BY e.salary DESC;
+
+-- 2. 도시가 'seoul'인 고객만 조회
+SELECT *
+  FROM CUSTOMER
+ WHERE CITY LIKE '_eo_%'; 
+
+SELECT *
+  FROM CUSTOMER
+ WHERE CUST_NAME LIKE 'CUST__'; 
+
+SELECT *
+  FROM CUSTOMER
+  ORDER BY REG_DATE DESC;
+
+-- 3. 가격이 10,000이상 30,000 이하인 상품을 조회 - 맞음
+SELECT PROD_NAME, PRICE
+  FROM PRODUCT
+ WHERE price BETWEEN 10000 AND 30000; 
