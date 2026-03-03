@@ -277,8 +277,7 @@
     -- 논리부정연산자 NOT
     -- IN = OR와 동일
     -- BETWEEN
-
-
+    ```
 
 - SELECT 연산
 
