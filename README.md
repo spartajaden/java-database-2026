@@ -148,7 +148,7 @@
     - Community Edition 클릭 windows (Installer) 선택
 
 3. VS Code 확장
-    - Database Client, Database 
+    - Database Client, Database Client JDBC 확장 설치
     ![alt text](image-12.png)
 
 
