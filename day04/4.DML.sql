@@ -1,0 +1,19 @@
+-- DML
+
+-- DEPT 테이블 복사 DEPT_TEMP 만들기
+CREATE TABLE DEPT_TEMP 
+	AS SELECT * FROM DEPT;
+
+-- 조회
+SELECT * FROM DEPT_TEMP;
+
+-- MARKETING 추가
+INSERT INTO DEPT_TEMP (deptno, dname, loc)
+VALUES (50, 'MARKETING', 'SEOUL');
+
+-- 에러
+INSERT INTO DEPT_TEMP (deptno, dname, loc)
+VALUES (60, 'STOCK');
+
+INSERT INTO DEPT_TEMP (deptno, dname, loc)
+VALUES ('SEVEN', 'STOCK', 'BUSAN');
