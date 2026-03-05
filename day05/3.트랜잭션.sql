@@ -47,3 +47,7 @@ UPDATE dept_tcl
 COMMIT;
 
 -- 락2
+DELETE FROM DEPT_tcl
+ WHERE deptno = 60;
+
+ROLLBACK;
