@@ -14,7 +14,7 @@
 - DataBase Management System 을 줄여서 DBMS라고 부름
 - DBMS를 줄여서 DB라고도 함
 - 대부분 기업의 '도메인 정보'를 저장하고 있음
-
+- IT에서 가장 중요하게 생각해야할 기술중 하나
 
 ![alt text](image.png)
 
@@ -94,6 +94,18 @@
 
     ![alt text](image-6.png)
 
+- 멈춰있는 컨테이너 실행
+
+    ```bash
+    docker start [컨테이너ID]
+    ```
+
+- 컨테이너 자동실행 명령
+
+    ```bash
+    docker update --restart=always [컨테이너ID]
+    ```
+
 - 컨테이너 내부 접속
 
     ```bash
@@ -165,7 +177,7 @@
     - 연결된 XE - jave > Schema(Database와 같은의미) 확장 > JAVA 선택
     - 마우스 오른쪽 버튼 > SQL 편집
     - 글자크기 변경 > 메뉴 윈도우 > 환경 설정
-        - User Interface 모양 > 색상 및 글꼴 > DBeaver > Monospace font를 편집
+        - User Interface > 모양 > 색상 및 글꼴 > DBeaver > Monospace font를 편집
 
         ![alt text](image-13.png)
 
@@ -415,7 +427,7 @@ SQL> alter session set nls_date_format='dd-MON-rr';
     - 테이블 - 데이터를 저장하는 구조. Table/Entity
     - 레코드/로우 - 관련 데이터가 모두 모인 하나의 데이터 행. Record/Row/Tuple
     - 컬럼 - 데이터 특징을 담는 하나의 속성, Column/Attribute
-    - PK -  각 행의 유일하게 식별하는 키. 여러개의 PK를 가질 수도 있음. Primarykey
+    - PK -  각 행의 유일하게 식별하는 키. 여러개의 PK를 가질 수도 있음. Primary key
     - FK - 부모테이블의 PK와 관계를 갖는 키 Foreign key
 
 - ERD(Entity Relationship Diagram)
