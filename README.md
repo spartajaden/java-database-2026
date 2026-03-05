@@ -94,18 +94,6 @@
 
     ![alt text](image-6.png)
 
-- 멈춰있는 컨테이너 실행
-
-    ```bash
-    docker start [컨테이너ID]
-    ```
-
-- 컨테이너 자동실행 명령
-
-    ```bash
-    docker update --restart=always [컨테이너ID]
-    ```
-
 - 컨테이너 내부 접속
 
     ```bash
@@ -150,7 +138,7 @@
     - Community Edition 클릭 windows (Installer) 선택
 
 3. VS Code 확장
-    - Database Client, Database 
+    - Database Client, Database Client JDBC 확장 설치
     ![alt text](image-12.png)
 
 
@@ -200,7 +188,7 @@
 
 - SQL(Structured Query Language)
     - 구조화된 질의 언어
-    - 관계형 데이터베이스에서 DBMS상에 데이터를 정의, 조작, 제어하기 위해 표준 프로그래밍 언어
+    - 관계형 데이터베이스에서 DBMS상에 데이터를 정의, 조작, 제어하기 위해 사용하는 표준 프로그래밍 언어
     
 ## Day02
 
@@ -482,7 +470,7 @@ SQL> alter session set nls_date_format='dd-MON-rr';
     - Data Control Language
 
 - DML - [쿼리](./day04/4.DML.sql)
-    - 데이터 조작 언어 - 데이터를 추가, 변경, 삭제, 조회 하는 쿼리 명령어
+    - 데이터 조작 언어 - 데이터를 추가, 변경, 삭제, 조회 하는 쿼리 명령어 
     - SELECT - 조회용. 사전 학습
     - `INSERT` - 생성(추가)용
 
