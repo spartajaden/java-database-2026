@@ -5,6 +5,6 @@ BEGIN
 	v_empno := 7844;
 	prc_inoutparam(v_empno, v_ename);
 
-	dbms_output.put_line('EMPNO = ' || v_empno);
-	dbms_output.put_line('Ename = ' || v_ename);
+	dbms_output.put_line('V_EMPNO = ' || v_empno);
+	dbms_output.put_line('ENAME = ' || v_ename);
 END prc_noparam;
