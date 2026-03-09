@@ -198,13 +198,25 @@ ALTER TABLE emp_fk
 ADD CONSTRAINT empfk_deptno_fk
 	FOREIGN KEY (deptno)
 	REFERENCES dept_fk(deptno)
-	ON DELETE CASCADE;
+	ON DELETE CASCADE; -- 부모도 지우면 자식도 지워진다
 
 -- 전부 초기화. 자식테이블 부터 삭제 
 TRUNCATE TABLE emp_fk;
 TRUNCATE TABLE dept_fk;
+
 INSERT ALL
   INTO dept_fk (deptno, dname, loc) VALUES (10, 'DEV', 'SEOUL')
   INTO dept_fk (deptno, dname, loc) VALUES (20, 'ACCOUNTING', 'INCHEON')
   INTO dept_fk (deptno, dname, loc) VALUES (30, 'FINANCE', 'BUSAN')
 SELECT * FROM dual;
+
+INSERT INTO emp_fk (empno, ename, deptno)
+VALUES (1000, '성유고', 20);
+
+INSERT INTO emp_fk (empno, ename, deptno, job, mgr)
+VALUES (2000, '애슐리', 30, 'PRESIDENT', NULL);
+
+-- cascade 핵심
+DELETE FROM dept_fk
+ WHERE deptno = 20;
+
