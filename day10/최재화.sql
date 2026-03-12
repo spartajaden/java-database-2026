@@ -7,7 +7,7 @@ SELECT * FROM DIVTBL; -- 분류코드(DIVISION)
 
 SELECT * FROM MEMBERTBL; -- IDX, NAMES, LEVEL 가 있음
 
--- 1번 문제 현재 반납되지 않은 책의 정보 
+-- 1번 문제
 SELECT R.IDX AS "대여번호",
        M.NAMES AS "회원명",
        B.NAMES AS "책제목",
