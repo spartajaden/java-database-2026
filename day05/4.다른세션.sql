@@ -1,0 +1,14 @@
+SELECT * FROM dept_tcl;
+
+UPDATE DEPT_TCL
+   SET LOC = 'SEOUL'
+WHERE DEPTNO = 60;
+
+
+DELETE FROM DEPT_TCL
+ WHERE DEPTNO = 60;
+
+INSERT into DEPT_tcl (deptno, dname, loc)
+values (90, 'TEST', 'TEST');
+
+ROLLBACK;
