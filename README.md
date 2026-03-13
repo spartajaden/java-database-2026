@@ -85,7 +85,7 @@
         docker pull gvenzl/oracle-xe:21-slim
         ```
 
-        ![alt text](image-3.png)
+        ![alt text](image-37.png)
 
     - 컨테이너 실행
 
@@ -93,7 +93,7 @@
         docker run -d --name oracle-xe -p 1521:1521 -e ORACLE_PASSWORD=P12345s! gvenzl/oracle-xe:21-slim
         ``` 
 
-        ![alt text](image-4.png)
+        ![alt text](image-38.png)
 
     - 멈춰있는 컨테이너 실행
 
@@ -152,24 +152,24 @@
 3. VS Code 확장
     - Database Client, Database Client JDBC 확장 설치
 
-    ![alt text](image-8.png)
+    ![alt text](image-39.png)
 
 
 ### DBeaver 사용법
 
 - Database Navigator 에서 DB연결 시작
 
-    ![alt text](image-5.png)
+    ![alt text](image-40.png)
 
     - 마우스 오른쪽버튼 > Create > Connection
 
-        ![alt text](image-6.png)
+        ![alt text](image-41.png)
 
     - 연결정보 입력 Test Connection
     - 입력 시 주의사항 : Port번호 확인, Database 이름변경 Oracle -> XE로, Username, Password 일치
 
 
-        ![alt text](image-7.png)
+        ![alt text](image-42.png)
 
 
 ### 기본 사용법
@@ -180,7 +180,7 @@
     - 글자 크기 변경 > 메뉴 윈도우 > 환경 설정
         - User Interface > 모양 > 색상 및 글꼴 > DBeaver Fonts > Monospace font를 편집
 
-        ![alt text](image-9.png)
+        ![alt text](image-43.png)
 
 - 샘플 데이터베이스 생성
 
