@@ -39,19 +39,11 @@
 ### 오라클 설치 방법
 1. 로컬 설치 
 
-<<<<<<< HEAD
     ![alt text](image-44.png)
 
 2. 도커 설치(클라우드 동일)
 
     ![alt text](image-45.png)
-=======
-    ![alt text](image-1.png)
-
-2. 도커 설치(클라우드 동일)
-
-    ![alt text](image-2.png)
->>>>>>> 1ee27133d774dfafb47b5a60b0451138aac44acf
 
 ### 오라클 설치 이전
 
@@ -93,11 +85,7 @@
         docker pull gvenzl/oracle-xe:21-slim
         ```
 
-<<<<<<< HEAD
         ![alt text](image-46.png)
-=======
-        ![alt text](image-3.png)
->>>>>>> 1ee27133d774dfafb47b5a60b0451138aac44acf
 
     - 컨테이너 실행
 
@@ -105,11 +93,7 @@
         docker run -d --name oracle-xe -p 1521:1521 -e ORACLE_PASSWORD=P12345s! gvenzl/oracle-xe:21-slim
         ``` 
 
-<<<<<<< HEAD
         ![alt text](image-47.png)
-=======
-        ![alt text](image-4.png)
->>>>>>> 1ee27133d774dfafb47b5a60b0451138aac44acf
 
     - 멈춰있는 컨테이너 실행
 
@@ -168,40 +152,24 @@
 3. VS Code 확장
     - Database Client, Database Client JDBC 확장 설치
 
-<<<<<<< HEAD
     ![alt text](image-48.png)
-=======
-    ![alt text](image-8.png)
->>>>>>> 1ee27133d774dfafb47b5a60b0451138aac44acf
 
 
 ### DBeaver 사용법
 
 - Database Navigator 에서 DB연결 시작
 
-<<<<<<< HEAD
     ![alt text](image-49.png)
 
     - 마우스 오른쪽버튼 > Create > Connection
 
         ![alt text](image-50.png)
-=======
-    ![alt text](image-5.png)
-
-    - 마우스 오른쪽버튼 > Create > Connection
-
-        ![alt text](image-6.png)
->>>>>>> 1ee27133d774dfafb47b5a60b0451138aac44acf
 
     - 연결정보 입력 Test Connection
     - 입력 시 주의사항 : Port번호 확인, Database 이름변경 Oracle -> XE로, Username, Password 일치
 
 
-<<<<<<< HEAD
         ![alt text](image-51.png)
-=======
-        ![alt text](image-7.png)
->>>>>>> 1ee27133d774dfafb47b5a60b0451138aac44acf
 
 
 ### 기본 사용법
@@ -212,11 +180,7 @@
     - 글자 크기 변경 > 메뉴 윈도우 > 환경 설정
         - User Interface > 모양 > 색상 및 글꼴 > DBeaver Fonts > Monospace font를 편집
 
-<<<<<<< HEAD
         ![alt text](image-52.png)
-=======
-        ![alt text](image-9.png)
->>>>>>> 1ee27133d774dfafb47b5a60b0451138aac44acf
 
 - 샘플 데이터베이스 생성
 
@@ -247,11 +211,7 @@
     - SQL 편집기 > `실행계획` - 현재의 쿼리가 실행되는데 비용이 얼마나 발생하는지 파악하는 기술. 최적화 실행속도 빠르게 하기 전에 분석
     - 데이터베이스 > `트랜잭션` 모드 - 쿼리들이 실행되는 논리적 덩어리, Auto-Commit(조금 위험), None Commit
 
-<<<<<<< HEAD
 ![alt text](image-53.png)
-=======
-![alt text](image-10.png)
->>>>>>> 1ee27133d774dfafb47b5a60b0451138aac44acf
 
 - 위 스키마 하위에서 지금 알아야 할 내용들
     - 테이블
@@ -475,11 +435,7 @@ SQL> alter session set nls_date_format='dd-MON-rr';
     - 관계형 데이터베이스 구조를 그림으로 표현한 설계도
     - 데이터베이스를 만들기 전에 어떤 테이블이 필요하고 어떤 관계를 맺어야 하는지 시각적 표현
 
-<<<<<<< HEAD
 ![alt text](image-54.png)
-=======
-![alt text](image-11.png)
->>>>>>> 1ee27133d774dfafb47b5a60b0451138aac44acf
 
 - ERD 설명
     - PK - DEPT.DEPTNO, EMP.EMPNO
@@ -612,15 +568,9 @@ SQL> alter session set nls_date_format='dd-MON-rr';
     - DBeaver의 경우 메뉴 데이터베이스 > 트랜잭션 모드 > `Manual Commit`으로 변경
     - 환경 설정 > 연결 > 연결 유형 > `Auto-commit by default`를 해제
 
-<<<<<<< HEAD
     ![alt text](image-55.png)
 
     ![alt text](image-56.png)
-=======
-    ![alt text](image-13.png)
-
-    ![alt text](image-12.png)
->>>>>>> 1ee27133d774dfafb47b5a60b0451138aac44acf
 
 - 트랜잭션 명령어
     - `COMMIT` - 영구 반영
@@ -841,11 +791,7 @@ SQL> alter session set nls_date_format='dd-MON-rr';
     ```
 
     - 새로 생성한 사용자에게 아무런 권한도 부여하지 않으면 접속도 불가
-<<<<<<< HEAD
     ![alt text](image-57.png)
-=======
-    ![alt text](image-14.png)
->>>>>>> 1ee27133d774dfafb47b5a60b0451138aac44acf
 
 - 롤
     - 사용자 권한 종류를 각 객체별로 전부 지정하면 너무 많은 지정이 필요
@@ -938,11 +884,7 @@ SQL> alter session set nls_date_format='dd-MON-rr';
     - 예외 - 실행 중 발생하는 오류. 예외(Exception)
     - RAISE - 예외 생성 (추후학습 필요)
 
-<<<<<<< HEAD
     ![alt text](image-58.png)
-=======
-    ![alt text](image-15.png)
->>>>>>> 1ee27133d774dfafb47b5a60b0451138aac44acf
 
     ```sql
     DECLARE
@@ -1110,11 +1052,7 @@ SQL> alter session set nls_date_format='dd-MON-rr';
     - Declaration에서 PL/SQL 작성 후 저장, 실행
     - PROCEDURE와 FUNCITON은 컴파일 되는 개체
 
-<<<<<<< HEAD
     ![alt text](image-59.png)
-=======
-    ![alt text](image-16.png)
->>>>>>> 1ee27133d774dfafb47b5a60b0451138aac44acf
 
 - Functions
     - 프로시저와 동일. 타입을 FUNCTION으로 선택, 확인
@@ -1131,11 +1069,7 @@ SQL> alter session set nls_date_format='dd-MON-rr';
     - 툴바의 접속된 세션(현재, XE - Scott)확인, 사용중인 스키마(현재 SCOTT) 작업 도중 자주 확인
     - `트랜잭션`은 UPDATE, DELETE 작업 전엔 반드시 확인하고 진행
 
-<<<<<<< HEAD
     ![alt text](image-60.png)
-=======
-    ![alt text](image-17.png)
->>>>>>> 1ee27133d774dfafb47b5a60b0451138aac44acf
 
     - 각 테이블 마우스오른쪽 버튼 > SQL 생성
         - INSERT 부터 DDL까지 전부 존재
@@ -1173,11 +1107,7 @@ SQL> alter session set nls_date_format='dd-MON-rr';
     - 핵심 엔티티(테이블과 매핑)를 식별, 각 엔티티별 관계를 정의하는 논리구조 도식화
     - 추상화 ERD(Entity Relationship Diagram)를 작성
 
-<<<<<<< HEAD
     ![alt text](image-61.png)
-=======
-    ![alt text](image-18.png)
->>>>>>> 1ee27133d774dfafb47b5a60b0451138aac44acf
 
 - 논리 데이터 모델링
 
@@ -1186,22 +1116,14 @@ SQL> alter session set nls_date_format='dd-MON-rr';
     - 관계형 테이터 모델(테이블)로 구체화 
     - 논리(물리와 매칭) ERD 작성
 
-<<<<<<< HEAD
     ![alt text](image-62.png)
-=======
-    ![alt text](image-19.png)
->>>>>>> 1ee27133d774dfafb47b5a60b0451138aac44acf
 
 - 물리 데이터 모델링
     - 실제 사용하는 DBMS 특성(`Oracle`, MySQL, SQLServer...)를 고려해서 설계
     - 테이블, 컬럼, 인덱스, 제약조건, `시퀀스` 등 생성하고, 성능을 위해서 **반정규화** 진행
     - 최종 스키마 완성
 
-<<<<<<< HEAD
     ![alt text](image-63.png)
-=======
-    ![alt text](image-20.png)
->>>>>>> 1ee27133d774dfafb47b5a60b0451138aac44acf
 
 - 위 모델링을 1회성이 아닌, 기능 추가/변경으로 `지속적인 업데이트` 수행
 
@@ -1259,11 +1181,7 @@ SQL> alter session set nls_date_format='dd-MON-rr';
         - ~~`퇴원` - `환자`가 `병실`에서 퇴원~~
         - 다대다(n:m) 관계는 만들지 않음. 물리 DB에서 이를 구현할 수도 없음. `추후학습요`
 
-<<<<<<< HEAD
     ![alt text](image-64.png)
-=======
-    ![alt text](image-22.png)
->>>>>>> 1ee27133d774dfafb47b5a60b0451138aac44acf
 
 #### 논리설계
 
@@ -1291,21 +1209,13 @@ SQL> alter session set nls_date_format='dd-MON-rr';
 
 1. ERD 생성 클릭
 
-<<<<<<< HEAD
     ![alt text](image-65.png)
-=======
-    ![alt text](image-21.png)
->>>>>>> 1ee27133d774dfafb47b5a60b0451138aac44acf
 
 2. 새로운 엔티티 추가
     - 노란색 + : 키 추가
     - 하늘색 + : 컬럼 추가
 
-<<<<<<< HEAD
     ![alt text](image-66.png)
-=======
-    ![alt text](image-23.png)
->>>>>>> 1ee27133d774dfafb47b5a60b0451138aac44acf
 
 3. 관계(없거나 한개 또는 여러개) 클릭
     - 부모테이블 클릭 후 자식테이블 클릭
@@ -1313,7 +1223,6 @@ SQL> alter session set nls_date_format='dd-MON-rr';
     - 식별관계는 부모의 PK가 자식의 PK이면서 FK - 무조건 NOT NULL
     - 비식별관계는 단순 FK - NOT NULL 또는 NULL 모두 허용
 
-<<<<<<< HEAD
     ![alt text](image-67.png)
 
     - 결과
@@ -1327,40 +1236,17 @@ SQL> alter session set nls_date_format='dd-MON-rr';
 5. 물리 다이어그램으로 변경 작성. 각 데이터 타입 수정
 
     ![alt text](image-70.png)
-=======
-    ![alt text](image-24.png)
-
-    - 결과
-
-    ![alt text](image-25.png)
-
-4. 각 엔티티와 키와 속성 관계로 논리 다이어그램 작성
-
-    ![alt text](image-29.png)
-
-5. 물리 다이어그램으로 변경 작성. 각 데이터 타입 수정
-
-    ![alt text](image-28.png)
->>>>>>> 1ee27133d774dfafb47b5a60b0451138aac44acf
 
 6. 내보내기 클릭 - [쿼리](./day09/3.병원물리스키마_비식별관계.sql)
     - DB종류 선택 - 현재 Oracle
     - PK제약조건, FK제약조건, 비식별 제약조건 추가 선택
     - SQL 미리보기 클릭 후, 미리보기 복사
 
-<<<<<<< HEAD
     ![alt text](image-71.png)
 
 7. DB툴에서 복사한 쿼리로 실행
 
     ![alt text](image-72.png)
-=======
-    ![alt text](image-30.png)
-
-7. DB툴에서 복사한 쿼리로 실행
-
-    ![alt text](image-31.png)
->>>>>>> 1ee27133d774dfafb47b5a60b0451138aac44acf
 
 #### 모델링 시 주의점
 
@@ -1368,11 +1254,7 @@ SQL> alter session set nls_date_format='dd-MON-rr';
 - ERDCloud에서 식별관계 SQL쿼리를 제대로 생성못함
 - 관계에서 부모쪽 연결, 1(NOT NULL)과 0..1(NULL)의 차이 파악할 것
 
-<<<<<<< HEAD
 ![alt text](image-73.png)
-=======
-![alt text](image-32.png)
->>>>>>> 1ee27133d774dfafb47b5a60b0451138aac44acf
 
 ## Day10
 
